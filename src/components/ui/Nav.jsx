@@ -27,6 +27,11 @@ export const Nav = () => {
                             </NavLink>
 
                         </div>
+
+                        <div className="navRight text-white d-flex align-items-center gap-4 ms-auto">
+                            <p className='m-0'>JhanKee</p>
+                            <button className='btn btn-danger'>Logout</button>
+                        </div>
                     </div>
                 </div>
             </nav>
