@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
+import { AuthContext } from '../auth/authContext';
 
 export const Nav = () => {
+
+    const { user } = useContext(AuthContext);
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,7 +33,7 @@ export const Nav = () => {
                         </div>
 
                         <div className="navRight text-white d-flex align-items-center gap-4 ms-auto">
-                            <p className='m-0'>JhanKee</p>
+                            <p className='m-0'>{user.usuario}</p>
                             <button className='btn btn-danger'>Logout</button>
                         </div>
                     </div>

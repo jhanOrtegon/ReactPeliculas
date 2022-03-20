@@ -1,5 +1,5 @@
 // import React, { useContext } from 'react'
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from '../../hooks/useForm'
 import { types } from '../../types/types';
@@ -33,6 +33,9 @@ export const Login = () => {
         navigate('/movies', { replace: true })
     }
 
+    useEffect(() => {
+        localStorage.setItem('user', JSON.stringify(values))
+    }, [values])
 
     return (
         <>
