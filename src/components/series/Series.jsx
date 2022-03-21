@@ -9,7 +9,6 @@ export const Series = () => {
     const { dataFetch } = useFetch(url)
     const data = (Object.values(dataFetch).length) ?
         dataFetch.results.map(({ poster_path, name, original_language, overview, id }) => ({ poster_path, name, original_language, overview, id })) : [];
-    console.log(data);
     return (
         <>
             <div className="container">

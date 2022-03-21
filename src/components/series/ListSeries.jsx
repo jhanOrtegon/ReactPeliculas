@@ -11,7 +11,7 @@ export const ListSeries = ({ poster_path, name, original_language, overview, id 
                 <div className="card-body text-center p-0 mt-2 d-flex flex-column align-items-center">
                     <h5 className="card-title mt-2 d-flex align-items-center justify-content-center h-50"  >{name}</h5>
                     {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
-                    <NavLink to={'/movie'} className='btn btn-dark btn-lg w-100 h-50 mb-0  d-flex flex-column align-items-center '>Mas Informacion</NavLink>
+                    <NavLink to={`/result/${id}`} className='btn btn-dark btn-lg w-100 h-50 mb-0  d-flex flex-column align-items-center '>Mas Informacion</NavLink>
                 </div>
             </div>
 
